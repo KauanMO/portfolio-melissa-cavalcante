@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Krona One", sans-serif;
+}
+
+.container {
+    background-color: var(--dark-grey);
+    width: 100vw;
+    height: 400vh;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 1rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    width: fit-content;
+}
+
+
+.navbar>.nav-item {
+    cursor: pointer;
+    color: white;
+}
+
+.navbar>.nav-item.active {
+    color: var(--light-green);
+}
+
+.navbar>.nav-item:hover {
+    color: var(--light-green);
+}
+
+.faixa-svg {
+    position: absolute;
+    right: 10%;
+    width: 20%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome {
+    margin-left: 10%;
+}
+
+.welcome>.first {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    color: var(--light-green);
+    font-size: 4vw;
+}
+
+.welcome>.second {
+    text-shadow: 2px 0 var(--baby-blue), -2px 0 var(--baby-blue), 0 2px var(--baby-blue), 0 -2px var(--baby-blue),
+        1px 1px var(--baby-blue), -1px -1px var(--baby-blue), 1px -1px var(--baby-blue), -1px 1px var(--baby-blue);
+    color: var(--dark-grey);
+    font-size: 4vw;
+}
+
+.welcome>.third {
+    color: var(--light-grey);
+    font-size: 1rem;
+}
+
+.olho-svg {
+    position: absolute;
+    right: 10%;
+    width: 40%;
+}
